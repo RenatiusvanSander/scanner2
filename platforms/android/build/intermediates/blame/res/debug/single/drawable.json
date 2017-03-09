@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/home/remy/ionic_projects/myApp/platforms/android/build/intermediates/res/merged/debug/drawable/flip_camera.png",
+        "source": "/home/remy/ionic_projects/myApp/platforms/android/build/intermediates/exploded-aar/barcodescanner/res/drawable/flip_camera.png"
+    },
+    {
+        "merged": "/home/remy/ionic_projects/myApp/platforms/android/build/intermediates/res/merged/debug/drawable/toggle_torch.png",
+        "source": "/home/remy/ionic_projects/myApp/platforms/android/build/intermediates/exploded-aar/barcodescanner/res/drawable/toggle_torch.png"
+    },
+    {
+        "merged": "/home/remy/ionic_projects/myApp/platforms/android/build/intermediates/res/merged/debug/drawable/share_via_barcode.png",
+        "source": "/home/remy/ionic_projects/myApp/platforms/android/build/intermediates/exploded-aar/barcodescanner/res/drawable/share_via_barcode.png"
+    },
+    {
+        "merged": "/home/remy/ionic_projects/myApp/platforms/android/build/intermediates/res/merged/debug/drawable/launcher_icon.png",
+        "source": "/home/remy/ionic_projects/myApp/platforms/android/build/intermediates/exploded-aar/barcodescanner/res/drawable/launcher_icon.png"
+    }
+]

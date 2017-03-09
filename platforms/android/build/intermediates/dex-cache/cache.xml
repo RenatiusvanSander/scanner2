@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/home/remy/ionic_projects/myApp/platforms/android/build/intermediates/exploded-aar/com.android.support/support-fragment/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8fe8a8f77d651982ce5e18f6187dc4daf914ac57">
+        <dex dex="/home/remy/ionic_projects/myApp/platforms/android/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-25.2.0_7843242704595c5f4d2c27a9f73dc366f7d7c364.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/remy/ionic_projects/myApp/platforms/android/build/intermediates/exploded-aar/barcodescanner/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7c37db119e266ef17f7c29ad7afe4dfdcecacc16">
+        <dex dex="/home/remy/ionic_projects/myApp/platforms/android/build/intermediates/pre-dexed/debug/intermediates-exploded-aar-barcodescanner_a10550db0d46ca14ca3c70985ca6e90676ff4b8e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/remy/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/25.2.0/support-annotations-25.2.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4a5a82a027706397fff621b22fd6fa796e91d7c5">
+        <dex dex="/home/remy/ionic_projects/myApp/platforms/android/build/intermediates/pre-dexed/debug/support-annotations-25.2.0_a1efb4032716271f55c93f8d253a7a818d1e1d9f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/remy/ionic_projects/myApp/platforms/android/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ee394a892dd21c03a528139c1e8d4e0e1264ac84">
+        <dex dex="/home/remy/ionic_projects/myApp/platforms/android/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-25.2.0_1859e87895872670b5da7591cb23041fc4603abe.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/remy/ionic_projects/myApp/platforms/android/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="fa0446a14ed5dd3725047d6399ffea771a564b30">
+        <dex dex="/home/remy/ionic_projects/myApp/platforms/android/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-25.2.0_cb677ef7b2e881eb9910688ac88f498fe45a8828.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/remy/ionic_projects/myApp/platforms/android/build/intermediates/exploded-aar/android/CordovaLib/unspecified/debug/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c28f1b9f3c2e92b1aa637bf33f4b921c4f1b3ce1">
+        <dex dex="/home/remy/ionic_projects/myApp/platforms/android/build/intermediates/pre-dexed/debug/CordovaLib-unspecified-debug_0fe5996d3c7b4cfd139e44b50af0e77c68138888.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/remy/ionic_projects/myApp/platforms/android/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e820b7be8c035dd522da4bc822e8a76c8e27921a">
+        <dex dex="/home/remy/ionic_projects/myApp/platforms/android/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-25.2.0_445c1c85a63188fd8c990be2db93f52dc833c9cb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/remy/ionic_projects/myApp/platforms/android/build/intermediates/exploded-aar/com.android.support/support-v4/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/home/remy/ionic_projects/myApp/platforms/android/build/intermediates/pre-dexed/debug/com.android.support-support-v4-25.2.0_e06684bad9904696bd298cf40c0efd843abfdeb8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/remy/ionic_projects/myApp/platforms/android/build/intermediates/exploded-aar/com.android.support/support-compat/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="67eb33110dbacb46a48175b08ae0c96761d2c17d">
+        <dex dex="/home/remy/ionic_projects/myApp/platforms/android/build/intermediates/pre-dexed/debug/com.android.support-support-compat-25.2.0_010ee5dd3e1d84bca7088aa0d4ff4f82da9000d8.jar" />
+    </item>
+
+</items>

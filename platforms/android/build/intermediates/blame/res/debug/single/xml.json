@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/remy/ionic_projects/myApp/platforms/android/build/intermediates/res/merged/debug/xml/config.xml",
+        "source": "/home/remy/ionic_projects/myApp/platforms/android/res/xml/config.xml"
+    },
+    {
+        "merged": "/home/remy/ionic_projects/myApp/platforms/android/build/intermediates/res/merged/debug/xml/preferences.xml",
+        "source": "/home/remy/ionic_projects/myApp/platforms/android/build/intermediates/exploded-aar/barcodescanner/res/xml/preferences.xml"
+    }
+]

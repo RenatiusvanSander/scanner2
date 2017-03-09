@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h2>Welcome to Barcodescan!</h2>
+  <p>
+    Here starts the barcode app!
+  </p>
+  <br />
+  <button ion-button icon-left (click)="scanBarcode()">
+    <ion-icon name="star"></ion-icon>
+    scan Barcode
+  </button>
+  <button ion-button icon-right (click)="testFakeScan()">
+    <ion-icon name="star"></ion-icon>
+     faked Barcode
+  </button>
+</ion-content>
