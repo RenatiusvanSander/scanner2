@@ -14,8 +14,19 @@
     <ion-icon name="star"></ion-icon>
     scan Barcode
   </button>
-  <button ion-button icon-right (click)="testFakeScan()">
+  <br />
+  <button ion-button icon-left (click)="testFakeScan()">
     <ion-icon name="star"></ion-icon>
      faked Barcode
+  </button>
+  <br />
+  <button ion-button icon-left (click)="scanBarcodeBorrowInventoryItem()">
+    <ion-icon name="star"></ion-icon>
+    Borrow Inventory-Item
+  </button>
+  <br />
+  <button ion-button icon-left (click)="scanBarcodeReturnInventoryItem()">
+    <ion-icon name="star"></ion-icon>
+    Return Inventory-Item
   </button>
 </ion-content>

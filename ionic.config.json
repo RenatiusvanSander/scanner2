@@ -2,5 +2,11 @@
   "name": "myApp",
   "app_id": "",
   "v2": true,
-  "typescript": true
+  "typescript": true,
+  "proxies": [
+    {
+      "path": "",
+      "proxyUrl": "http://10.255.137.26:3128"
+    }
+  ]
 }

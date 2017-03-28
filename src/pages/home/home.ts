@@ -1,7 +1,10 @@
 import {Component} from '@angular/core';
-import {NavController} from 'ionic-angular';
+import {NavController /*, AlertController*/} from 'ionic-angular';
 import {BarcodeScanner} from 'ionic-native';
 import {ScanPage} from '../scan/scan';
+import {BorrowInventoryItemsPage} from '../borrow-inventory-items/borrow-inventory-items';
+import {ReturnInventoryItemsPage} from '../return-inventory-items/return-inventory-items';
+import {Config} from '../app-constants';
 
 @Component({
   selector: 'page-home',
@@ -10,38 +13,22 @@ import {ScanPage} from '../scan/scan';
 export class HomePage {
 
   scanPage = ScanPage;
+  borrowPage = BorrowInventoryItemsPage; // short them
+  returnPage = ReturnInventoryItemsPage; // short them
 
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController /*, public alertCtrl: AlertController */) {
   }
 
   // scan the barcode after click on button
   scanBarcode() {
-
     // start barcode scan
     BarcodeScanner
-      .scan(
-        {
-          preferFrontCamera: false, // iOS and Android
-          showFlipCameraButton: true, // iOS and Android
-          showTorchButton: true, // iOS and Android
-          torchOn: true, // Android, launch with the torch switched on (if available)
-          prompt: "Place a barcode inside the scan area", // Android
-          resultDisplayDuration: 500, // Android, display scanned text for X ms. 0 suppresses it entirely, default 1500
-          formats: 'QR_CODE, DATA_MATRIX, UPC_E, UPC_A, EAN_8, EAN_13, CODE_128, CODE_39, ITF', // default: all
-          orientation: "landscape", // Android only (portrait|landscape), default unset so it rotates with the device
-          disableAnimations: false, // iOS
-        }
-      )
-      .then(function scanSuccess(scanResult) {
+      .scan(Config.config.barcodeOptions)
+      .then((scanResult) => {
         // Success! Barcode data is here
 
-        //log to console
-        console.log(scanResult.text);
-        console.log(scanResult.format);
-        console.log(scanResult.cancelled);
-
-        // does not work without const
-        var barcodeData = new BarcodeData(scanResult.text, scanResult.format);
+        // save data into barcodeData
+        let barcodeData = new BarcodeData(scanResult.text, scanResult.format);
 
         //push the scanResult on ScanPage
         this.scanDetails(barcodeData);
@@ -62,8 +49,74 @@ export class HomePage {
   // does a test faked scan
   testFakeScan() {
     // do a fake scan
-    this.scanDetails(new BarcodeData('FAKE SCAN', 'FAKE_FORMAT'));
+    this.scanDetails(new BarcodeData('6789', 'FAKE_FORMAT'));
   }
+
+  // scanBarcode and borrow an inventory item
+  scanBarcodeBorrowInventoryItem() {
+    // borrow Item after barcodeScan
+
+    // scan Barcode
+    BarcodeScanner
+      .scan(Config.config.barcodeOptions)
+      .then((scanResult) => {
+        // Success! Barcode data is here
+
+        // save data into barcodeData
+        //let barcodeData = new BarcodeData('6789', 'ItIsABarcode');
+        let barcodeData = new BarcodeData(scanResult.text, scanResult.format);
+
+        //push the scanResult on returnPage
+        this.navCtrl
+          .push(this.borrowPage, {details: barcodeData})
+          .catch((err) => {
+            // handle error
+            console.log(err); // log error
+            return false;
+          });
+
+      })
+      .catch(function failure(err) {
+        // An error occurred
+
+        // log to console
+        console.log(err);
+      });
+
+  }
+
+  // scanBarcode and return the inventory item into pool
+  scanBarcodeReturnInventoryItem() {
+    // return an item to pool
+
+    // scan Barcode
+    BarcodeScanner
+      .scan(Config.config.barcodeOptions)
+      .then((scanResult) => {
+        // Success! Barcode data is here
+
+        // save data into barcodeData
+        let barcodeData = new BarcodeData(scanResult.text, scanResult.format);
+        //let barcodeData = new BarcodeData('6789', 'ItIsABarcode');
+
+        //push the scanResult on returnPage
+        this.navCtrl
+          .push(this.returnPage, {details: barcodeData})
+          .catch((err) => {
+
+            // handle error
+            console.log(err); // log error
+            return false;
+          });
+      })
+      .catch(function failure(err) {
+        // An error occurred
+
+        // log to console
+        console.log(err);
+      });
+  }
+
 }
 
 // export the data
@@ -72,4 +125,3 @@ export class BarcodeData {
               public format: String) {
   }
 }
-

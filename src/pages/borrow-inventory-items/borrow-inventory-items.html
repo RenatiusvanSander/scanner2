@@ -1,0 +1,26 @@
+<!--
+  Generated template for the BorrowInventoryItems page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Borrow Inventory</ion-title>
+  </ion-navbar>
+
+</ion-header>
+<ion-content padding>
+<div class="container">
+  <h1>Borrower Form</h1>
+  <form name="borrower" (ngSubmit)="submitBorrower()">
+    <div class="form-group">
+      <label for="Name">Name</label>
+      <input type="text" class="form-control" [(ngModel)]="borrower.name" name="name" required>
+    </div>
+    <br>
+    <button type="submit" block>Submit</button>
+  </form>
+</div>
+</ion-content>
