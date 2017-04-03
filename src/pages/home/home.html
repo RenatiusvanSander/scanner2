@@ -1,14 +1,11 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Home</ion-title>
+    <ion-title class="header-navbar-title">Home</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h2>Welcome to Barcodescan!</h2>
-  <p>
-    Here starts the barcode app!
-  </p>
+  <h2 class="heading2">Welcome to InventoryScanner!</h2>
   <br />
   <button ion-button icon-left (click)="scanBarcode()">
     <ion-icon name="star"></ion-icon>
@@ -17,7 +14,7 @@
   <br />
   <button ion-button icon-left (click)="testFakeScan()">
     <ion-icon name="star"></ion-icon>
-     faked Barcode
+    faked Barcode
   </button>
   <br />
   <button ion-button icon-left (click)="scanBarcodeBorrowInventoryItem()">

@@ -3811,6 +3811,178 @@ ion-icon {
   src: local("Noto Sans Bold"), local("Noto-Sans-Bold"), url("../assets/fonts/noto-sans-bold.woff") format("woff"), url("../assets/fonts/noto-sans-bold.ttf") format("truetype");
 }
 
+.form-input {
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 2px;
+  color: #e20074;
+  display: block;
+  font-size: 15px;
+  line-height: 20px;
+  padding: 10px;
+  width: 100%;
+  -webkit-appearance: none;
+}
+
+.form-input::-moz-placeholder {
+  color: #FF0097;
+}
+
+.form-input:-ms-input-placeholder {
+  color: #FF0097;
+}
+
+.form-input::-webkit-input-placeholder {
+  text-indent: 0;
+  color: #FF0097;
+}
+
+.form-input.hover, .form-input:hover {
+  background-color: #ededed;
+}
+
+.form-input.active, .form-input:active {
+  background-color: #d9d9d9;
+}
+
+.form-input.disabled, .form-input.readonly, .form-input[disabled], .form-input[readonly] {
+  background-color: hsv-darken(#383838, 5%, true);
+  border-color: hsv-darken(#737373, 14%, true);
+  color: hsv-darken(#fff, 50%, true);
+  cursor: not-allowed;
+  resize: none;
+}
+
+.form-input.disabled::-moz-placeholder, .form-input.readonly::-moz-placeholder, .form-input[disabled]::-moz-placeholder, .form-input[readonly]::-moz-placeholder {
+  color: hsv-darken(#fff, 50%, true);
+}
+
+.form-input.disabled:-ms-input-placeholder, .form-input.readonly:-ms-input-placeholder, .form-input[disabled]:-ms-input-placeholder, .form-input[readonly]:-ms-input-placeholder {
+  color: hsv-darken(#fff, 50%, true);
+}
+
+.form-input.disabled::-webkit-input-placeholder, .form-input.readonly::-webkit-input-placeholder, .form-input[disabled]::-webkit-input-placeholder, .form-input[readonly]::-webkit-input-placeholder {
+  text-indent: 0;
+  color: hsv-darken(#fff, 50%, true);
+}
+
+.navbar {
+  position: relative;
+  top: 0;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+}
+
+.header-navbar-title {
+  position: absolute;
+  left: 48px;
+  right: 48px;
+  top: 25px;
+  text-align: center;
+}
+
+@font-face (TeleIconUi, ../assets/fonts/teleicon-ui, normal, normal);
+@font-face (telegroteskscreen-thin, ../assets/fonts/telegroteskscreen-thin, thin, normal);
+@font-face (telegroteskscreen-regular, ../assets/fonts/telegroteskscreen-regular, regular, normal);
+@font-face (telegroteskscreen-regular-italic, ../assets/fonts/telegroteskscreen-regular-italic, regular, italic);
+@font-face (telegroteskscreen-medium, ../assets/fonts/telegroteskscreen-medium, medium, normal);
+@font-face (telegroteskscreen-medium-italic, ../assets/fonts/telegroteskscreen-medium-italic, medium, italic);
+@font-face (telegroteskscreen-bold, ../assets/fonts/telegroteskscreen-bold, bold, normal);
+@font-face (telegroteskscreen-ultra, ../assets/fonts/telegroteskscreen-ultra, ultra, normal);
+/*$button-ios-background-color-activated: ; */
+/*$button-md-outline-border-style: ;
+$button-md-outline-border-width: ;
+$button-md-outline-box-shadow: ;
+$button-md-outline-box-shadow-activated: ;
+$button-md-outline-opacity-activated: ;
+$button-md-outline-ripple-background-color: ;
+$button-md-outline-text-color: ;
+$button-md-padding: ;
+$button-md-ripple-background-color: ;
+$button-md-round-border-radius: ;*/
+/*$toolbar-button-ios-strong-font-weight: ;
+$toolbar-button-md-strong-font-weight: ;
+$toolbar-button-wp-strong-font-weight: ;*/
+/*$toolbar-ios-button-border-radius: ;
+$toolbar-ios-button-color: color-contrast($colors-ios, $toolbar-ios-background, ios);
+$toolbar-ios-button-font-size: ;
+$toolbar-ios-button-strong-font-weight: ;
+$toolbar-ios-height: ;*/
+/*$toolbar-ios-padding: ;*/
+/*$toolbar-ios-text-color: ;
+$toolbar-ios-text-color: ;*/
+/*$toolbar-ios-title-font-weight: ; */
+/*$toolbar-md-button-border-radius: ;
+$toolbar-md-button-color: ;
+$toolbar-md-button-font-size: ;
+$toolbar-md-button-strong-font-weight: ;
+$toolbar-md-height: ;*/
+/*$toolbar-md-padding: ;
+$toolbar-md-text-color: ;
+$toolbar-md-text-color: ;*/
+/*$toolbar-text-color: ;
+$toolbar-text-color: ;*/
+/*.label-md {
+  margin: 13px 8px 13px 0;
+  text-decoration-color: $color-brand !important;
+}*/
+.heading1 {
+  text-align: left;
+  font-size: 40px;
+  font-weight: bold;
+  color: #e20074;
+}
+
+.heading2 {
+  text-align: left;
+  font-size: 25px;
+  font-weight: bold;
+  color: #e20074;
+}
+
+.btn {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  font-size: 1.6rem;
+  line-height: 20px;
+  padding: 0.1em;
+  font-weight: normal;
+  white-space: nowrap;
+  background-image: none;
+  text-decoration: none;
+  height: 75px;
+}
+
+.btn > .icon {
+  margin-top: -1px;
+  padding-right: 20px;
+}
+
+.btn > .icon-right {
+  padding-left: 20px;
+  padding-right: 0;
+}
+
+.btn.focus, .btn:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn.hover, .btn:hover {
+  text-decoration: none;
+}
+
+.btn.disabled, .btn[disabled] {
+  cursor: not-allowed;
+  background: #454545;
+  border-color: #979797;
+  color: white;
+}
+
 ion-action-sheet {
   position: absolute;
   top: 0;
@@ -4106,7 +4278,7 @@ ion-alert input {
   z-index: 0;
   display: block;
   margin: 0;
-  font-size: 14px;
+  font-size: 20px;
   line-height: 20px;
 }
 
@@ -4313,14 +4485,14 @@ ion-alert input {
 
 .alert-md .alert-wrapper {
   max-width: 280px;
-  border-radius: 2px;
-  background-color: #fafafa;
+  border-radius: 3px;
+  background-color: #fff !important;
   box-shadow: 0 16px 20px rgba(0, 0, 0, 0.4);
 }
 
 .alert-md .alert-head {
   padding: 24px 24px 20px 24px;
-  text-align: left;
+  text-align: center;
 }
 
 .alert-md .alert-title {
@@ -4334,7 +4506,7 @@ ion-alert input {
 .alert-md .alert-message,
 .alert-md .alert-input-group {
   padding: 0 24px 24px 24px;
-  color: rgba(0, 0, 0, 0.5);
+  color: #e20074;
 }
 
 .alert-md .alert-message {
@@ -4406,7 +4578,7 @@ ion-alert input {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background-color: #387ef5;
+  background-color: #e20074;
   -webkit-transform: scale3d(0, 0, 0);
   transform: scale3d(0, 0, 0);
   transition: -webkit-transform 280ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -4415,11 +4587,11 @@ ion-alert input {
 }
 
 .alert-md [aria-checked=true] .alert-radio-label {
-  color: #387ef5;
+  color: #e20074;
 }
 
 .alert-md [aria-checked=true] .alert-radio-icon {
-  border-color: #387ef5;
+  border-color: #e20074;
 }
 
 .alert-md [aria-checked=true] .alert-radio-inner {
@@ -4455,8 +4627,8 @@ ion-alert input {
 }
 
 .alert-md [aria-checked=true] .alert-checkbox-icon {
-  border-color: #387ef5;
-  background-color: #387ef5;
+  border-color: #e20074;
+  background-color: #e20074;
 }
 
 .alert-md [aria-checked=true] .alert-checkbox-inner {
@@ -4488,12 +4660,12 @@ ion-alert input {
   position: relative;
   overflow: hidden;
   margin: 0 8px 0 0;
-  padding: 10px;
+  padding: 14px;
   border-radius: 2px;
   font-weight: 500;
   text-align: right;
   text-transform: uppercase;
-  color: #387ef5;
+  color: #e20074;
   background-color: transparent;
 }
 
@@ -5424,16 +5596,16 @@ button[disabled],
 
 .button-ios {
   margin: 0.4rem 0.2rem;
-  padding: 0 1em;
+  padding: 0.1em;
   height: 2.8em;
   border-radius: 4px;
   font-size: 1.6rem;
   color: #fff;
-  background-color: #387ef5;
+  background-color: #e20074;
 }
 
 .button-ios.activated {
-  background-color: #3474e1;
+  background-color: #e4147f;
   opacity: 1;
 }
 
@@ -5442,13 +5614,13 @@ button[disabled],
 }
 
 .button-large-ios {
-  padding: 0 1em;
+  padding: 0.1em;
   height: 2.8em;
   font-size: 2rem;
 }
 
 .button-small-ios {
-  padding: 0 0.9em;
+  padding: 0.9em;
   height: 2.1em;
   font-size: 1.3rem;
 }
@@ -5474,20 +5646,20 @@ button[disabled],
   border-width: 1px;
   border-style: solid;
   border-radius: 4px;
-  border-color: #387ef5;
-  color: #387ef5;
+  border-color: #e20074;
+  color: #e20074;
   background-color: transparent;
 }
 
 .button-outline-ios.activated {
   color: #fff;
-  background-color: #387ef5;
+  background-color: #e20074;
   opacity: 1;
 }
 
 .button-clear-ios {
   border-color: transparent;
-  color: #387ef5;
+  color: #e20074;
   background-color: transparent;
 }
 
@@ -5497,13 +5669,13 @@ button[disabled],
 }
 
 .button-clear-ios:hover:not(.disable-hover) {
-  color: #387ef5;
+  color: #e20074;
   opacity: 0.6;
 }
 
 .button-round-ios {
-  padding: 0 2.6rem;
-  border-radius: 64px;
+  padding: 0.1em;
+  border-radius: 4px;
 }
 
 .button-ios-primary {
@@ -5682,25 +5854,25 @@ button[disabled],
 
 .button-md {
   overflow: hidden;
-  margin: 0.4rem 0.2rem;
+  margin: 0.4rem;
   padding: 0 1.1em;
   height: 3.6rem;
   border-radius: 2px;
-  font-size: 1.4rem;
-  font-weight: 500;
+  font-size: 1.6rem;
+  font-weight: normal;
   text-transform: uppercase;
   color: #fff;
-  background-color: #387ef5;
+  background-color: #e20074;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
   transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1), background-color 300ms cubic-bezier(0.4, 0, 0.2, 1), color 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-md:hover:not(.disable-hover) {
-  background-color: #387ef5;
+  background-color: #e20074;
 }
 
 .button-md.activated {
-  background-color: #3474e1;
+  background-color: #e4147f;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.14), 0 3px 5px rgba(0, 0, 0, 0.21);
 }
 
@@ -5709,13 +5881,13 @@ button[disabled],
 }
 
 .button-large-md {
-  padding: 0 1em;
+  padding: 0.1em;
   height: 2.8em;
   font-size: 2rem;
 }
 
 .button-small-md {
-  padding: 0 0.9em;
+  padding: 0.9em;
   height: 2.1em;
   font-size: 1.3rem;
 }
@@ -5740,8 +5912,8 @@ button[disabled],
 .button-outline-md {
   border-width: 1px;
   border-style: solid;
-  border-color: #387ef5;
-  color: #387ef5;
+  border-color: black;
+  color: #e20074;
   background-color: transparent;
   box-shadow: none;
 }
@@ -5757,12 +5929,12 @@ button[disabled],
 }
 
 .button-outline-md .button-effect {
-  background-color: #387ef5;
+  background-color: #e20074;
 }
 
 .button-clear-md {
   border-color: transparent;
-  color: #387ef5;
+  color: #e20074;
   background-color: transparent;
   box-shadow: none;
   opacity: 1;
@@ -5782,8 +5954,8 @@ button[disabled],
 }
 
 .button-round-md {
-  padding: 0 2.6rem;
-  border-radius: 64px;
+  padding: 2.6rem;
+  border-radius: 4px;
 }
 
 .button-md [icon-only] {
@@ -6147,8 +6319,8 @@ button[disabled],
 }
 
 .button-round-wp {
-  padding: 0 2.6rem;
-  border-radius: 64px;
+  padding: 2.6rem;
+  border-radius: 4px;
 }
 
 .button-wp [icon-only] {
@@ -13019,7 +13191,7 @@ ion-item-sliding.active-swipe-left button[expandable] {
   padding-left: 16px;
   border-radius: 0;
   font-size: 1.7rem;
-  color: #000;
+  color: #e20074;
   background-color: #fff;
   transition: background-color 200ms linear;
 }
@@ -13270,7 +13442,7 @@ ion-item-group .item-wrapper:last-child .item-ios .item-inner {
   font-size: 1.6rem;
   font-weight: normal;
   text-transform: none;
-  color: #000;
+  color: #e20074;
   background-color: #fff;
   box-shadow: none;
   transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -13312,7 +13484,7 @@ ion-item-group .item-wrapper:last-child .item-ios .item-inner {
   font-size: 1.4rem;
   line-height: normal;
   text-overflow: inherit;
-  color: #666;
+  color: #e20074;
 }
 
 .item-md.item-block .item-inner {
@@ -13515,7 +13687,7 @@ ion-item-group .item-md .item-wrapper:last-child .item-inner {
   font-size: 1.6rem;
   font-weight: normal;
   text-transform: none;
-  color: #000;
+  color: #e20074;
   background-color: #fff;
   box-shadow: none;
 }
@@ -13635,7 +13807,7 @@ ion-item-group .item-md .item-wrapper:last-child .item-inner {
   padding-left: 16px;
   border-bottom: 1px solid transparent;
   font-size: 2rem;
-  color: #000;
+  color: #e20074;
   background-color: #fff;
 }
 
@@ -13901,7 +14073,7 @@ ion-label[floating] {
 .item-input .label-md,
 .item-select .label-md,
 .item-datetime .label-md {
-  color: #999;
+  color: #e20074;
 }
 
 .label-md[stacked] {
@@ -14308,7 +14480,7 @@ ion-list[inset] {
   min-height: 4.5rem;
   border-top: 1px solid #dedede;
   font-size: 1.4rem;
-  color: #757575;
+  color: #e20074;
 }
 
 .list-header-md-primary {
@@ -14437,7 +14609,7 @@ ion-list[inset] {
   padding-left: 16px;
   border-bottom: 1px solid transparent;
   font-size: 2rem;
-  color: #000;
+  color: #e20074;
 }
 
 .list-header-wp-primary {
@@ -15062,7 +15234,7 @@ ion-picker-cmp {
   top: 77px;
   font-size: 20px;
   line-height: 42px;
-  color: #000;
+  color: #e20074;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   pointer-events: none;
@@ -15074,7 +15246,7 @@ ion-picker-cmp {
   height: 4.6rem;
   font-size: 20px;
   line-height: 42px;
-  color: #000;
+  color: #e20074;
   background: transparent;
   -webkit-transform-origin: center center;
   transform-origin: center center;
@@ -15158,7 +15330,7 @@ ion-picker-cmp {
   top: 77px;
   font-size: 22px;
   line-height: 42px;
-  color: #000;
+  color: #e20074;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   pointer-events: none;
@@ -15170,7 +15342,7 @@ ion-picker-cmp {
   height: 4.3rem;
   font-size: 22px;
   line-height: 42px;
-  color: #000;
+  color: #e20074;
   background: transparent;
   transition-timing-function: ease-out;
   -webkit-backface-visibility: hidden;
@@ -15267,7 +15439,7 @@ ion-picker-cmp {
   top: 77px;
   font-size: 22px;
   line-height: 42px;
-  color: #000;
+  color: #e20074;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   pointer-events: none;
@@ -15279,7 +15451,7 @@ ion-picker-cmp {
   height: 4.2rem;
   font-size: 22px;
   line-height: 42px;
-  color: #000;
+  color: #e20074;
   background: transparent;
   transition-timing-function: ease-out;
   -webkit-backface-visibility: hidden;
@@ -17071,10 +17243,10 @@ ion-segment {
   height: 3.2rem;
   border-width: 1px;
   border-style: solid;
-  border-color: #387ef5;
+  border-color: #d0d0d0;
   font-size: 1.3rem;
   line-height: 3rem;
-  color: #387ef5;
+  color: #d0d0d0;
   background-color: transparent;
 }
 
@@ -17084,19 +17256,19 @@ ion-segment {
 }
 
 .segment-ios .segment-button.segment-activated {
-  color: #fff;
-  background-color: #387ef5;
+  color: #000;
+  background-color: #d0d0d0;
   opacity: 1;
   transition: 100ms all linear;
 }
 
 .segment-ios .segment-button:hover:not(.segment-activated) {
-  background-color: rgba(56, 126, 245, 0.1);
+  background-color: rgba(208, 208, 208, 0.1);
   transition: 100ms all linear;
 }
 
 .segment-ios .segment-button:active:not(.segment-activated) {
-  background-color: rgba(56, 126, 245, 0.16);
+  background-color: rgba(208, 208, 208, 0.16);
   transition: 100ms all linear;
 }
 
@@ -17116,7 +17288,7 @@ ion-segment {
 }
 
 .segment-ios .segment-button-disabled {
-  color: rgba(56, 126, 245, 0.3);
+  color: rgba(208, 208, 208, 0.3);
   pointer-events: none;
 }
 
@@ -17284,7 +17456,7 @@ ion-segment {
   font-weight: 500;
   line-height: 4rem;
   text-transform: uppercase;
-  color: #387ef5;
+  color: #d0d0d0;
   background-color: transparent;
   opacity: 0.7;
   transition: 100ms all linear;
@@ -17296,7 +17468,7 @@ ion-segment {
 }
 
 .segment-md .segment-button.activated, .segment-md .segment-button.segment-activated {
-  border-color: #387ef5;
+  border-color: #d0d0d0;
   opacity: 1;
 }
 
@@ -18764,7 +18936,7 @@ ion-spinner.spinner-paused svg {
   -ms-flex-pack: center;
   justify-content: center;
   border-top: 0.55px solid rgba(0, 0, 0, 0.3);
-  background: #f8f8f8;
+  background: #e20074;
 }
 
 .tabs-ios[tabsPlacement=top] .tabbar {
@@ -18928,7 +19100,7 @@ ion-spinner.spinner-paused svg {
 }
 
 .tabs-md .tabbar {
-  background: #f8f8f8;
+  background: #e20074;
 }
 
 .tabs-md .tab-button {
@@ -19129,7 +19301,7 @@ ion-spinner.spinner-paused svg {
 }
 
 .tabs-wp .tabbar {
-  background: #f8f8f8;
+  background: #e20074;
 }
 
 .tabs-wp .tab-button {
@@ -19901,13 +20073,13 @@ ion-navbar.toolbar {
 }
 
 .toolbar-background-ios {
-  background: #f8f8f8;
+  background: #e20074;
 }
 
 .header-ios .toolbar-background-ios,
 .footer-ios .toolbar-background-ios {
   border-style: solid;
-  border-color: rgba(0, 0, 0, 0.3);
+  border-color: #e20074;
 }
 
 .header-ios .toolbar-ios:last-child .toolbar-background-ios {
@@ -19937,10 +20109,10 @@ ion-navbar.toolbar {
 }
 
 .toolbar-title-ios {
-  font-size: 1.7rem;
+  font-size: 21px;
   font-weight: 600;
   text-align: center;
-  color: #000;
+  color: #fff;
   pointer-events: auto;
 }
 
@@ -19995,8 +20167,8 @@ ion-navbar.toolbar {
 .bar-button-outline-ios {
   border-width: 1px;
   border-style: solid;
-  border-color: #387ef5;
-  color: #387ef5;
+  border-color: #fff;
+  color: #fff;
   background-color: transparent;
 }
 
@@ -20005,23 +20177,23 @@ ion-navbar.toolbar {
 }
 
 .bar-button-outline-ios.activated {
-  color: #fff;
-  background-color: #387ef5;
+  color: #000;
+  background-color: #fff;
 }
 
 .bar-button-solid-ios {
-  color: #fff;
-  background-color: #387ef5;
+  color: #000;
+  background-color: #fff;
 }
 
 .bar-button-solid-ios:hover:not(.disable-hover) {
-  color: #fff;
+  color: #000;
   opacity: .4;
 }
 
 .bar-button-solid-ios.activated {
-  color: #fff;
-  background-color: #3474e1;
+  color: #000;
+  background-color: #ebebeb;
   opacity: .4;
 }
 
@@ -20099,14 +20271,14 @@ ion-navbar.toolbar {
 .bar-button-default-ios,
 .bar-button-default.bar-button-ios-default,
 .bar-button-clear-ios-default {
-  color: #387ef5;
+  color: #fff;
   background-color: transparent;
 }
 
 .bar-button-default-ios:hover:not(.disable-hover),
 .bar-button-default.bar-button-ios-default:hover:not(.disable-hover),
 .bar-button-clear-ios-default:hover:not(.disable-hover) {
-  color: #387ef5;
+  color: #fff;
 }
 
 .bar-button-default-ios.activated,
@@ -20118,14 +20290,14 @@ ion-navbar.toolbar {
 .bar-button-clear-ios,
 .bar-button-default.bar-button-ios-clear,
 .bar-button-clear-ios-clear {
-  color: #387ef5;
+  color: #fff;
   background-color: transparent;
 }
 
 .bar-button-clear-ios:hover:not(.disable-hover),
 .bar-button-default.bar-button-ios-clear:hover:not(.disable-hover),
 .bar-button-clear-ios-clear:hover:not(.disable-hover) {
-  color: #387ef5;
+  color: #fff;
 }
 
 .bar-button-clear-ios.activated,
@@ -21394,8 +21566,8 @@ ion-navbar.toolbar {
 }
 
 .toolbar-background-md {
-  border-color: #b2b2b2;
-  background: #f8f8f8;
+  border-color: #e20074;
+  background: #e20074;
 }
 
 .header-md::after,
@@ -21441,9 +21613,9 @@ ion-navbar.toolbar {
 
 .toolbar-title-md {
   padding: 0 12px;
-  font-size: 2rem;
+  font-size: 21px;
   font-weight: 500;
-  color: #424242;
+  color: #fff;
 }
 
 .bar-buttons-md {
@@ -21500,8 +21672,8 @@ ion-navbar.toolbar {
 .bar-button-outline-md {
   border-width: 1px;
   border-style: solid;
-  border-color: #424242;
-  color: #424242;
+  border-color: #fff;
+  color: #fff;
   background-color: transparent;
 }
 
@@ -21514,21 +21686,21 @@ ion-navbar.toolbar {
 }
 
 .bar-button-outline-md .button-effect {
-  background-color: #424242;
+  background-color: #fff;
 }
 
 .bar-button-solid-md {
-  color: #fff;
-  background-color: #424242;
+  color: #424242;
+  background-color: #fff;
 }
 
 .bar-button-solid-md:hover:not(.disable-hover) {
-  color: #fff;
+  color: #424242;
 }
 
 .bar-button-solid-md.activated {
-  color: #fff;
-  background-color: #515151;
+  color: #424242;
+  background-color: #ebebeb;
 }
 
 .bar-button-md.bar-button-icon-left ion-icon {
@@ -21597,27 +21769,27 @@ ion-navbar.toolbar {
 .bar-button-default-md,
 .bar-button-clear-md-default,
 .bar-button-md-default {
-  color: #424242;
+  color: #fff;
   background-color: transparent;
 }
 
 .bar-button-default-md:hover:not(.disable-hover),
 .bar-button-clear-md-default:hover:not(.disable-hover),
 .bar-button-md-default:hover:not(.disable-hover) {
-  color: #424242;
+  color: #fff;
 }
 
 .bar-button-clear-md,
 .bar-button-clear-md-clear,
 .bar-button-md-clear {
-  color: #424242;
+  color: #fff;
   background-color: transparent;
 }
 
 .bar-button-clear-md:hover:not(.disable-hover),
 .bar-button-clear-md-clear:hover:not(.disable-hover),
 .bar-button-md-clear:hover:not(.disable-hover) {
-  color: #424242;
+  color: #fff;
 }
 
 .toolbar-md-primary .toolbar-background-md {
@@ -22845,8 +23017,8 @@ ion-navbar.toolbar {
 }
 
 .toolbar-background-wp {
-  border-color: #b2b2b2;
-  background: #f8f8f8;
+  border-color: #e20074;
+  background: #e20074;
 }
 
 .toolbar-content-wp {
@@ -22865,7 +23037,7 @@ ion-navbar.toolbar {
   font-size: 1.5rem;
   font-weight: bold;
   text-transform: uppercase;
-  color: #000;
+  color: #fff;
 }
 
 .bar-buttons-wp {
@@ -22922,8 +23094,8 @@ ion-navbar.toolbar {
 .bar-button-outline-wp {
   border-width: 1px;
   border-style: solid;
-  border-color: #000;
-  color: #000;
+  border-color: #fff;
+  color: #fff;
   background-color: transparent;
 }
 
@@ -22932,22 +23104,22 @@ ion-navbar.toolbar {
 }
 
 .bar-button-outline-wp.activated {
-  color: #fff;
-  background-color: #000;
+  color: #000;
+  background-color: #fff;
 }
 
 .bar-button-solid-wp {
-  color: #fff;
-  background-color: #000;
+  color: #000;
+  background-color: #fff;
 }
 
 .bar-button-solid-wp:hover:not(.disable-hover) {
-  color: #fff;
+  color: #000;
 }
 
 .bar-button-solid-wp.activated {
-  color: #fff;
-  background-color: #141414;
+  color: #000;
+  background-color: #ebebeb;
 }
 
 .bar-button-wp.bar-button-icon-left ion-icon {
@@ -23016,27 +23188,27 @@ ion-navbar.toolbar {
 .bar-button-default-wp,
 .bar-button-clear-wp-default,
 .bar-button-wp-default {
-  color: #000;
+  color: #fff;
   background-color: transparent;
 }
 
 .bar-button-default-wp:hover:not(.disable-hover),
 .bar-button-clear-wp-default:hover:not(.disable-hover),
 .bar-button-wp-default:hover:not(.disable-hover) {
-  color: #000;
+  color: #fff;
 }
 
 .bar-button-clear-wp,
 .bar-button-clear-wp-clear,
 .bar-button-wp-clear {
-  color: #000;
+  color: #fff;
   background-color: transparent;
 }
 
 .bar-button-clear-wp:hover:not(.disable-hover),
 .bar-button-clear-wp-clear:hover:not(.disable-hover),
 .bar-button-wp-clear:hover:not(.disable-hover) {
-  color: #000;
+  color: #fff;
 }
 
 .toolbar-wp-primary .toolbar-background-wp {

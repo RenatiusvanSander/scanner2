@@ -1,5 +1,3 @@
-// Ionic Variables and Theming. For more info, please see:
-// http://ionicframework.com/docs/v2/theming/
 $font-path: "../assets/fonts";
 
 @import "ionic.globals";
@@ -76,3 +74,646 @@ $colors: (
 
 @import "roboto";
 @import "noto-sans";
+//
+// Components Variables and Settings
+// ----------------------------------------
+
+// R´emys test of SASS in SCSS
+// import file is _reset
+
+//
+// Components Variables and Settings - Dark
+// ----------------------------------------
+
+////// Scaffolding //////
+$background-color-regular:          #262626; // used for transparency calculations
+
+////// Colors //////
+$color-bright:                      #fff;
+$color-dark:                        #383838;
+
+$color-positive:                    #6bb32d;
+$color-warning:                     #dbad39;
+$color-negative:                    #d90000;
+$color-brand:                       #e20074;
+$color-inactive:                    #d0d0d0;
+$color-function:                    #0ca1dc;
+$color-highlight:                   #ff0;
+
+$color-border:                      #858585;
+$color-border-bright:               #5c5c5c;
+
+$color-element-background:          #383838;
+$color-element-border:              #737373;
+$color-element-divider:             #858585;
+
+
+$font-color-regular:                $color-bright;
+$font-color-light:                  #a3a3a3;
+$font-color-dark:                   $color-dark;
+
+$font-color-positive:               $color-positive;
+$font-color-warning:                $color-warning;
+$font-color-negative:               $color-negative;
+$font-color-brand:                  $color-brand;
+$font-color-inactive:               hsv-lighten($background-color-regular, 10%, true);
+
+$font-color-link:                   #31c3f7;
+$font-color-link-hover:             hsv-darken($font-color-link, 7%, true); // -7%
+$font-color-link-active:            hsv-darken($font-color-link, 15%, true); // -15%
+$font-color-link-focus:             hsv-darken($font-color-link, 21%, true); // -21%
+
+
+
+//////Heading/////
+
+$heading-border-color:              $color-element-divider;
+
+////// Mark //////
+$marked-font-color:                 $font-color-dark;
+$marked-bgr-color:                  $color-highlight;
+
+
+////// Quotes //////
+$quote-figure-border-left:          1px solid $color-border-bright;
+
+////// Tables //////
+
+$table-row-border-bottom:           1px solid $color-border-bright;
+
+$table-header-border-bottom:        1px solid $color-border;
+$table-footer-border-top:           1px double $color-border; // double wins over solid from $table-row-border-bottom
+$table-footer-border-bottom:        1px solid $color-border;
+
+$table-font-color-hover:            hsv-darken($font-color-regular, 7%, true);
+
+$table-font-color-positive:         hsv-darken($font-color-positive, 10%, true);
+$table-font-color-warning:          hsv-darken($font-color-warning , 10%, true);
+$table-font-color-negative:         hsv-darken($font-color-negative, 10%, true);
+$table-font-color-brand:            $color-bright;
+$table-font-color-inactive:         $font-color-inactive;
+
+$table-bgr-color-hover:             hsv-lighten($background-color-regular, 12%, true);
+
+$table-bgr-color-positive:          $color-positive;
+$table-bgr-color-warning:           $color-warning;
+$table-bgr-color-negative:          $color-negative;
+$table-bgr-color-brand:             $color-brand; // brand has no fallback
+$table-bgr-color-inactive:          transparent; // inactive has no fallback
+
+$table-bgr-color-alpha:             .05;
+$table-bgr-color-hover-alpha:       .2;
+
+$table-gray-odd-bgr-color:          hsv-darken($background-color-regular, -5%, true);
+$table-gray-odd-font-color:         $font-color-regular;
+
+////// Forms //////
+$input-bgr-color:                   $color-bright;
+$input-border-color:                $color-bright;
+
+$input-border-color-positive:       hsv-darken($color-positive, -15, true);
+$input-border-color-warning:        hsv-darken($color-warning, 0, true);
+$input-border-color-negative:       hsv-darken($color-negative, 0, true);
+
+////// Checkboxes | JS //////
+$checkbox-border-color:             $color-element-border;
+
+////// Radios | JS //////
+$radio-border-color:                $color-element-border;
+
+////// Selects | JS //////
+$select-font-color:                 $font-color-regular;
+$select-font-color-dropdown:        $font-color-dark;
+$select-border-color:               $color-element-border;
+$select-bgr-color:                  $color-element-background;
+
+$select-disabled-font-color:        hsv-darken($select-font-color, 50%, true);
+$select-disabled-border-color:      hsv-darken($select-border-color, 14%, true);
+$select-disabled-bgr-color:         hsv-darken($select-bgr-color, 5%, true);
+
+$select-options-bgr-color:          $color-bright;
+$select-options-active-bgr-color:   hsv-darken($select-options-bgr-color, 15%, true);
+
+////// Buttons //////
+$button-border-color-positive:      hsv-darken($color-positive, 32%, true);
+$button-border-color-function:      hsv-darken($color-function, 32%, true);
+$button-border-color-negative:      hsv-darken($color-negative, 32%, true);
+$button-border-color-brand:         #e3bacf; // special color
+
+////// Content-Lists //////
+$cl-element-bgr-color-focus:        hsv-lighten($background-color-regular, 21%, true);
+$cl-element-bgr-color-hover:        hsv-lighten($background-color-regular, 7%, true);
+$cl-element-bgr-color-active:       hsv-lighten($background-color-regular, 15%, true);
+
+$cl-element-font-color-brand:       $color-bright;
+$cl-element-bgr-color-brand:        $color-brand;
+
+////// Pager //////
+$pager-text-color:                  $font-color-regular;
+$pager-border-color:                $color-element-border;
+$pager-background-color:            $background-color-regular;
+
+$pager-disabled-text-color:         hsv-darken($pager-text-color, 50%, true);
+$pager-disabled-border-color:       hsv-darken($pager-border-color, 14%, true);
+$pager-disabled-bgr-color:          hsv-lighten($pager-background-color, 5%, true);
+
+////// Breadcrumb //////
+$breadcrumb-color:                  #757575;
+
+////// Pagination //////
+$pagination-bgr-color:              $color-element-background;
+$pagination-border-color:           $color-element-border;
+
+$pagination-active-bgr-color:       $color-brand;
+$pagination-active-border-color:    $pagination-active-bgr-color;
+
+$pagination-disabled-bgr-color:     $pagination-bgr-color;
+$pagination-disabled-border-color:  hsv-darken($pagination-border-color, 15%, true);
+
+////// Badges //////
+$badges-bgr-color:                  $color-bright;
+$badges-bgr-color-positive:         $color-positive;
+$badges-bgr-color-warning:          $color-warning;
+$badges-bgr-color-negative:         $color-negative;
+$badges-bgr-color-function:         $color-function;
+$badges-bgr-color-brand:            $color-brand;
+$badges-bgr-color-dark:             $color-element-background;
+$badges-font-color-normal:          $color-dark;
+$badges-font-color-bright:          $font-color-regular;
+
+////// Modal //////
+$modal-content-bgr:                 $color-dark;
+
+// input
+$input-border-radius: 2px;
+$line-height-regular: 20px;
+$input-padding: 10px;
+$input-font-color-placeholder: #FF0097;
+$input-disabled-bgr-color: $select-disabled-bgr-color;
+$input-disabled-border-color: $select-disabled-border-color;
+$input-disabled-font-color: $select-disabled-font-color;
+$input-disabled-font-color-placeholder: $select-disabled-font-color;
+$input-font-color: $color-brand;
+$font-size-regular: 15px;
+$transition-time-out: 500ms;
+//$transition-function: ;
+$transition-time-in: 500ms;
+
+@function color-to-hsv($r, $g: 0, $b: 0, $a: 1) {
+  $color: #000;
+
+  @if type-of($r) != 'color' {
+    $color: rgba($r, $g, $b, $a);
+  } @else {
+    $color: $r;
+  }
+
+  // rgba
+  $r: red($color) / 255;
+  $g: green($color) / 255;
+  $b: blue($color) / 255;
+  $a: alpha($color);
+
+  // conversion values
+  $cmax: max($r, max($g, $b));
+  $cmin: min($r, min($g, $b));
+  $delta: $cmax - $cmin;
+
+  // hsv
+  $hue: hue($color);
+  $saturation: 0;
+  @if $cmax != 0 {
+    $saturation: percentage($delta / $cmax);
+  }
+  $value: percentage($cmax);
+
+  @return ($hue, $saturation, $value, $a);
+}
+
+@function hsv-hue($hsv) {
+  @if type-of($hsv) == 'color' {
+    $hsv: color-to-hsv($hsv);
+  }
+  @return nth($hsv, 1);
+}
+
+// returns the saturation value of a hsv color
+@function hsv-saturation($hsv) {
+  @if type-of($hsv) == 'color' {
+    $hsv: color-to-hsv($hsv);
+  }
+  @return nth($hsv, 2);
+}
+
+// returns the value of a hsv color
+@function hsv-value($hsv) {
+  @if type-of($hsv) == 'color' {
+    $hsv: color-to-hsv($hsv);
+  }
+  @return nth($hsv, 3);
+}
+
+// returns the alpha value of a hsv color
+@function hsv-alpha($hsv) {
+  @if type-of($hsv) == 'color' {
+    $hsv: color-to-hsv($hsv);
+  }
+  @return nth($hsv, 4);
+}
+
+@function hsv-to-color($h, $saturation: 100%, $value: 100%, $alpha: 1) {
+  @if type-of($h) == 'list' {
+    $alpha: hsv-alpha($h);
+    $value: hsv-value($h);
+    $saturation: hsv-saturation($h);
+    $h: hsv-hue($h);
+  } @else if type-of($h) == 'number' {
+    @if unitless($h) {
+      $h: (360 * (0 + $h)) + 'deg';
+    }
+  }
+
+  $chroma: hsl($h, 100%, 50%);
+
+  @if unit($saturation) == '%' {
+    $saturation: 0 + ($saturation / 100%);
+  }
+  @if unit($value) == '%' {
+    $value: 0 + ($value / 100%);
+  }
+
+  $c: $value * $saturation;
+  $m: ($value - $c) * 255;
+
+  $r: max(0, min(red($chroma) * $c + $m, 255));
+  $g: max(0, min(green($chroma) * $c + $m, 255));
+  $b: max(0, min(blue($chroma) * $c + $m, 255));
+
+  $color: rgba($r, $g, $b, $alpha);
+
+  @return $color;
+}
+
+@function hsv-adjust-brightness($hsv-color, $value, $return-rgb-color: false) {
+  @if $hsv-color == false {
+    @return false;
+  }
+
+  @if type-of($hsv-color) == 'color' {
+    $hsv-color: color-to-hsv($hsv-color);
+  }
+
+  $hue: hsv-hue($hsv-color);
+  $saturation: hsv-saturation($hsv-color);
+  $brightness: hsv-value($hsv-color);
+  $alpha: hsv-alpha($hsv-color);
+
+  @if unit($value) == '%' {
+    $value: 0 + ($value / 100%);
+  }
+
+  $brightness: max(0, min(($brightness / 100%) + $value, 1));
+  $result: ($hue, $saturation, percentage($brightness), $alpha);
+  @if ($return-rgb-color) {
+    @return hsv-to-color($result);
+  }
+  @return $result;
+}
+
+@function hsv-darken($hsv-color, $value, $return-rgb-color: false) {
+  @return hsv-adjust-brightness($hsv-color, 0 - $value, $return-rgb-color);
+}
+@function hsv-adjust-brightness($hsv-color, $value, $return-rgb-color: false) {
+  @if $hsv-color == false {
+    @return false;
+  }
+
+  @if type-of($hsv-color) == 'color' {
+    $hsv-color: color-to-hsv($hsv-color);
+  }
+
+  $hue: hsv-hue($hsv-color);
+  $saturation: hsv-saturation($hsv-color);
+  $brightness: hsv-value($hsv-color);
+  $alpha: hsv-alpha($hsv-color);
+
+  @if unit($value) == '%' {
+    $value: 0 + ($value / 100%);
+  }
+
+  $brightness: max(0, min(($brightness / 100%) + $value, 1));
+  $result: ($hue, $saturation, percentage($brightness), $alpha);
+  @if ($return-rgb-color) {
+    @return hsv-to-color($result);
+  }
+  @return $result;
+}
+
+.form-input {
+  background-color: $input-bgr-color;
+  border: 1px solid $input-border-color;
+  border-radius: $input-border-radius;
+  color: $input-font-color;
+  display: block;
+  font-size: $font-size-regular; // prevent font-size inherit in other modules / scopes
+  line-height: $line-height-regular; // set line height since it was resetted by normalize
+  padding: $input-padding;
+  width: 100%;
+  @include placeholder($input-font-color-placeholder);
+  -webkit-appearance: none;
+  //@include transition(all $transition-time-out $transition-function);
+
+  &.hover,
+  &:hover { // on input fields the cursor indicates focus, so we need no hover on focuesed states
+    background-color: hsv-darken($input-bgr-color, 7%, true);
+    //@include transition($transition-time-in, '-duration');
+  }
+
+  //@include form-control-focus($input-bgr-color);
+
+  &.active,
+  &:active {
+    background-color: hsv-darken($input-bgr-color, 15%, true);
+  }
+
+  &.disabled,
+  &.readonly,
+  &[disabled],
+  &[readonly] {
+    background-color: $input-disabled-bgr-color;
+    border-color: $input-disabled-border-color;
+    color: $input-disabled-font-color;
+    cursor: not-allowed;
+    resize: none;
+    @include placeholder($input-disabled-font-color-placeholder);
+  }
+}
+
+.navbar {
+  position: relative;
+  top: 0;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+}
+
+.header-navbar-title {
+  position: absolute;
+  left: 48px;
+  right: 48px;
+  top: 25px;
+  text-align: center;
+}
+
+// refactor _fonts.scss
+//@include font-face('TeleIconUi', 'teleicon-ui', '../assets/fonts/teleicon-ui', normal, normal);
+@font-face(TeleIconUi, ../assets/fonts/teleicon-ui, normal, normal);
+// Brand - new Screenfont
+@font-face(telegroteskscreen-thin, ../assets/fonts/telegroteskscreen-thin, thin, normal);
+@font-face(telegroteskscreen-regular, ../assets/fonts/telegroteskscreen-regular, regular, normal);
+@font-face(telegroteskscreen-regular-italic, ../assets/fonts/telegroteskscreen-regular-italic, regular, italic);
+@font-face(telegroteskscreen-medium, ../assets/fonts/telegroteskscreen-medium, medium, normal);
+@font-face(telegroteskscreen-medium-italic, ../assets/fonts/telegroteskscreen-medium-italic, medium, italic);
+@font-face(telegroteskscreen-bold, ../assets/fonts/telegroteskscreen-bold, bold, normal);
+@font-face(telegroteskscreen-ultra, ../assets/fonts/telegroteskscreen-ultra, ultra, normal);
+
+//refactor to _toolbar.scss
+$toolbar-background: $color-brand;
+
+//refactor to _button.scss
+$button-round-padding: 2.6rem;
+$button-border-radius: 4px;
+$font-size-regular: 1.6rem;
+$font-size-small: 1.3rem;
+$button-padding: 0.1em;
+$button-padding-small: 0.9em;
+$font-size-large: 2rem;
+$button-padding-large: 0.1em;
+$button-ios-background-color: $color-brand;
+/*$button-ios-background-color-activated: ; */
+$button-ios-border-radius: $button-border-radius;
+//$button-ios-clear-background-color: ;
+//$button-ios-clear-background-color-activated: ;
+$button-ios-clear-border-color: transparent;
+//$button-ios-clear-opacity-activated: ;
+//$button-ios-clear-opacity-hover: ;
+//$button-ios-clear-text-color-hover: ;
+$button-ios-font-size: $font-size-regular;
+//$button-ios-height: ;
+$button-ios-large-font-size: $font-size-large;
+//$button-ios-large-height: ;
+$button-ios-large-padding: $button-padding-large;
+//$button-ios-margin: ;
+//$button-ios-opacity-activated: ;
+//$button-ios-opacity-hover: ;
+//$button-ios-outline-background-color: ;
+//$button-ios-outline-background-color-activated: ;
+//$button-ios-outline-border-color: ;
+//$button-ios-outline-border-radius: ;
+//$button-ios-outline-border-style: ;
+//$button-ios-outline-border-width: ;
+//$button-ios-outline-opacity-activated: ;
+//$button-ios-outline-text-color: ;
+//$button-ios-outline-text-color-activated: color-contrast($colors-ios, $button-ios-background-color);
+$button-ios-padding: $button-padding;
+$button-ios-round-border-radius: $button-border-radius;
+$button-ios-round-padding: $button-padding;
+$button-ios-small-font-size: $font-size-small;
+//$button-ios-small-height: ;
+//$button-ios-small-icon-font-size: ;
+$button-ios-small-padding: $button-padding-small;
+//$button-ios-strong-font-weight: ;
+$button-ios-text-color:	$font-color-regular;
+//$colors-md: copy-colors($colors);
+$button-md-background-color: $color-brand;
+//$button-md-background-color-activated: color-shade($button-md-background-color);
+//$button-md-background-color-hover: $button-md-background-color;
+$button-md-border-radius: 2px;
+//$button-md-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+//$button-md-box-shadow-activated	0 3px 5px rgba(0, 0, 0, .14), 0 3px 5px rgba(0, 0, 0, .21)
+//$button-md-clear-background-color: ;
+//$button-md-clear-background-color-activated: rgba(158, 158, 158, .2);
+//$button-md-clear-background-color-hover: rgba(158, 158, 158, .1);
+//$button-md-clear-border-color: ;
+//$button-md-clear-box-shadow: ;
+//$button-md-clear-box-shadow-activated: ;
+//$button-md-clear-opacity: ;
+//$button-md-clear-ripple-background-color: ;
+//$button-md-clear-text-color: ;
+$button-md-font-size: $font-size-regular;
+$button-md-font-weight: normal;
+//$button-md-height: ;
+$button-md-large-font-size: $font-size-large;
+//$button-md-large-height: ;
+$button-md-large-padding: $button-padding-large;
+$button-md-margin: 0.4rem;
+//$button-md-opacity-activated: ;
+//$button-md-outline-background-color: ;
+//$button-md-outline-background-color-activated: ;
+//$button-md-outline-background-color-hover: rgba(158, 158, 158, .1);
+$button-md-outline-border-color: black;
+/*$button-md-outline-border-style: ;
+$button-md-outline-border-width: ;
+$button-md-outline-box-shadow: ;
+$button-md-outline-box-shadow-activated: ;
+$button-md-outline-opacity-activated: ;
+$button-md-outline-ripple-background-color: ;
+$button-md-outline-text-color: ;
+$button-md-padding: ;
+$button-md-ripple-background-color: ;
+$button-md-round-border-radius: ;*/
+$button-md-round-padding: $button-round-padding;
+$button-md-small-font-size: $font-size-small;
+//$button-md-small-height: ;
+//$button-md-small-icon-font-size: ;
+$button-md-small-padding: $button-padding-small;
+//$button-md-strong-font-weight: ;
+$button-md-text-color: $font-color-regular;
+$button-md-text-transform: uppercase;
+$button-md-transition-duration: 300ms;
+$button-md-transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+$button-round-border-radius: $button-border-radius;
+$button-round-padding: 2.6rem;
+
+//refactor _toolbar.scss
+$toolbar-active-color: $color-brand;
+$toolbar-active-color: $color-inactive;
+$toolbar-background: $color-brand;
+$toolbar-border-color: $color-brand;
+/*$toolbar-button-ios-strong-font-weight: ;
+$toolbar-button-md-strong-font-weight: ;
+$toolbar-button-wp-strong-font-weight: ;*/
+$toolbar-inactive-color: $color-inactive;
+$toolbar-ios-active-color: $toolbar-active-color;
+$toolbar-ios-background: $toolbar-background;
+$toolbar-ios-border-color: $toolbar-border-color;
+$toolbar-ios-border-color: $toolbar-border-color;
+/*$toolbar-ios-button-border-radius: ;
+$toolbar-ios-button-color: color-contrast($colors-ios, $toolbar-ios-background, ios);
+$toolbar-ios-button-font-size: ;
+$toolbar-ios-button-strong-font-weight: ;
+$toolbar-ios-height: ;*/
+$toolbar-ios-inactive-color: $toolbar-inactive-color;
+$toolbar-ios-inactive-color: $toolbar-inactive-color;
+/*$toolbar-ios-padding: ;*/
+/*$toolbar-ios-text-color: ;
+$toolbar-ios-text-color: ;*/
+$toolbar-ios-title-font-size: 21px;
+/*$toolbar-ios-title-font-weight: ; */
+$toolbar-ios-title-text-align: center;
+//$toolbar-ios-title-text-color: color-contrast($colors-ios, $toolbar-ios-background);
+$toolbar-md-active-color: $toolbar-active-color;
+$toolbar-md-background: $toolbar-background;
+$toolbar-md-border-color: $toolbar-border-color;
+/*$toolbar-md-button-border-radius: ;
+$toolbar-md-button-color: ;
+$toolbar-md-button-font-size: ;
+$toolbar-md-button-strong-font-weight: ;
+$toolbar-md-height: ;*/
+$toolbar-md-inactive-color: $toolbar-inactive-color;
+$toolbar-md-inactive-color: $toolbar-inactive-color;
+/*$toolbar-md-padding: ;
+$toolbar-md-text-color: ;
+$toolbar-md-text-color: ;*/
+$toolbar-md-title-font-size: 21px;
+//$toolbar-md-title-text-color: color-contrast($colors-md, $toolbar-md-background, md);
+/*$toolbar-text-color: ;
+$toolbar-text-color: ;*/
+
+//alerts
+$alert-button-font-size: 20px;
+$alert-md-background-color: $color-bright !important;
+$alert-md-border-radius: 3px;
+$alert-md-button-padding: 14px;
+$alert-md-button-text-color: $color-brand;
+$alert-md-message-text-color: $color-brand;
+$alert-md-head-text-align: center;
+
+//$label-md-text-color: $color-brand !important;
+//$label-md-text-color-focused: $color-brand !important;
+/*.label-md {
+  margin: 13px 8px 13px 0;
+  text-decoration-color: $color-brand !important;
+}*/
+$item-md-paragraph-text-color: $color-brand;
+
+.heading1 {
+  text-align: left;
+  font-size: 40px;
+  font-weight: bold;
+  color: $color-brand
+}
+
+.heading2 {
+  text-align: left;
+  font-size: 25px;
+  font-weight: bold;
+  color: $color-brand
+}
+
+$button-icon-indent: 20px;
+
+@function hsv-lighten($hsv-color, $value, $return-rgb-color: false) {
+  @return hsv-adjust-brightness($hsv-color, $value, $return-rgb-color);
+}
+
+.btn {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: $button-border-radius;
+  font-size: $font-size-regular; // prevent font-size inherit in other modules / scopes
+  line-height: 20px; // prevent line-height inherit in other modules / scopes
+  padding: $button-padding;
+  font-weight: normal;
+  white-space: nowrap;
+  background-image: none;
+  text-decoration: none;
+  height: 75px;
+  //@include transition(all $transition-time-out $transition-function);
+
+  > .icon {
+    margin-top: -1px;
+    padding-right: $button-icon-indent;
+  }
+
+  > .icon-right {
+    padding-left: $button-icon-indent;
+    padding-right: 0;
+  }
+
+  &.focus,
+  &:focus {
+    color: $font-color-regular;
+    text-decoration: none;
+    //@include tab-focus();
+  }
+
+  &.hover,
+  &:hover {
+    text-decoration: none;
+    //@include transition($transition-time-in, '-duration');
+  }
+
+  &.disabled,
+  &[disabled] {
+    cursor: not-allowed;
+    background: hsv-lighten($color-element-background, 5%, true);
+    border-color: hsv-lighten($color-element-border, 14%, true);
+    color: hsv-lighten($font-color-regular, 50%, true);
+  }
+}
+
+// tabs
+$tabs-background:	$color-brand;
+$tabs-background:	$color-brand;
+
+// list text color
+$list-text-color: $color-brand;
+
+//labels
+$label-md-text-color: $color-brand;
+
+$outer-content-md-background-color: #bd003c;
+$list-md-header-color: $color-brand;
