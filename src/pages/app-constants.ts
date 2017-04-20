@@ -1,6 +1,10 @@
 /**
  * Created by remy on 15/03/17.
  */
+/*
+ * @Param config configure settings for development, developmentScratLab,
+  * staging, production ´config´
+ */
 var config = {
   "development": {
     "serverUrl": 'http://192.168.2.116',
@@ -45,7 +49,7 @@ var config = {
     }
   },
   "production": {
-    "serverUrl": 'http://localhost',
+    "serverUrl": 'http://100.127.254.3',
     "barcodeOptions": {
       preferFrontCamera: false, // iOS and Android
       showFlipCameraButton: true, // iOS and Android
@@ -59,6 +63,10 @@ var config = {
     }
   }
 };
+/**
+ * class config is exported with chosen environment either development,
+ * developmentScratLab, staging, production.
+ */
 export class Config {
-  static config = config['developmentScratLab'];
+  static config = config['production'];
 }

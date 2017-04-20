@@ -1,9 +1,30 @@
+/**
+ * imports class Component
+ */
 import {Component} from '@angular/core';
+/**
+ * imports classes NavController, NavParams, AlertController
+ */
 import {NavController, NavParams, AlertController} from 'ionic-angular';
+/**
+ * imports class BarcodeData
+ */
 import {BarcodeData} from '../home/home';
+/**
+ * imports class Http
+ */
 import {Http} from '@angular/http';
+/**
+ * imports class rxjs/add/operator/catch
+ */
 import 'rxjs/add/operator/catch';
+/**
+ * imports class rxjs/add/operator/map
+ */
 import 'rxjs/add/operator/map';
+/**
+ * imports class Config
+ */
 import {Config} from '../app-constants';
 
 /*
@@ -18,22 +39,54 @@ import {Config} from '../app-constants';
  See http://ionicframework.com/docs/v2/components/#navigation for more info on
  Ionic pages and navigation.
  */
+/**
+ * Component loads view template scan.html and the selector page-scan
+ */
 @Component({
   selector: 'page-scan',
   templateUrl: 'scan.html'
 })
+/**
+ * exports class ´ScanPage´
+ */
 export class ScanPage {
 
+  /**
+   * barcodeData has the barcode information
+   */
   barcodeData: BarcodeData; // barcode data
+  /**
+   * http is http-provider for receiving scanned
+   * inventory-barcode matching informations
+   */
   http: Http; // httpProvider
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, http: Http, public alertCtrl: AlertController) {
+  /**
+   * belongs to class ´ScanPage´
+   * @constructor
+   * @param navCtrl navigation controller for the view, model and controller
+   * @param navParams navigation Params store the barcodeData information,
+   * if it handed over
+   * @param http provides us with http-methods to ask api to receive
+   * inventory-item data from database
+   * @param alertCtrl it is for every alterbox the controller
+   */
+  constructor(public navCtrl: NavController,
+              public navParams: NavParams,
+              http: Http,
+              public alertCtrl: AlertController) {
 
     this.barcodeData = navParams.get('details');
     this.http = http;
     this.receiveInventoryItem();
   }
 
+  /**
+   * belongs to class ´ScanPage´
+   * the method ´receiveInventoryItem´ request at inventory-api an
+   * inventory-item via Config.config.serverUrl +':3000/api/inventory-items/scanned-item/?barcode='
+   * + this.barcodeData.text
+   */
   // receive the inventoryItem
   receiveInventoryItem() {
     // url to get
@@ -80,6 +133,11 @@ export class ScanPage {
       );
   }
 
+  /**
+   * belongs to `ScanPage`
+   * method ´ionViewDidLoad´ logs the page has been created
+   * to view
+   */
   ionViewDidLoad() {
     console.log('ionViewDidLoad ScanPage');
   }

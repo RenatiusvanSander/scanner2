@@ -14,6 +14,11 @@
     "orientation": "landscape",
     "disableAnimations": "false"
   }*/
+/**
+ * exports the static class ´BarcodeScannerOptions´
+ * The class stores the static barcode scanner
+ * options
+ */
 export class BarcodeScannerOptions {
 
   /**

@@ -48,6 +48,15 @@
     </item>
     <item
         is-multidex="false"
+        jar="/home/remy/ionic_projects/myApp/platforms/android/build/intermediates/exploded-aar/android/CordovaLib/unspecified/release/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="fdc2569e797df5169ea6cdf5593d1d6501666b53">
+        <dex dex="/home/remy/ionic_projects/myApp/platforms/android/build/intermediates/pre-dexed/release/CordovaLib-unspecified-release_b0fbd4dbeb7284209792cded7a6e9bf267340be4.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/home/remy/ionic_projects/myApp/platforms/android/build/intermediates/exploded-aar/android/CordovaLib/unspecified/debug/jars/classes.jar"
         jumboMode="false"
         optimize="true"
@@ -66,21 +75,21 @@
     </item>
     <item
         is-multidex="false"
-        jar="/home/remy/ionic_projects/myApp/platforms/android/build/intermediates/exploded-aar/com.android.support/support-v4/25.2.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="/home/remy/ionic_projects/myApp/platforms/android/build/intermediates/pre-dexed/debug/com.android.support-support-v4-25.2.0_e06684bad9904696bd298cf40c0efd843abfdeb8.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="/home/remy/ionic_projects/myApp/platforms/android/build/intermediates/exploded-aar/com.android.support/support-compat/25.2.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.2"
         sha1="67eb33110dbacb46a48175b08ae0c96761d2c17d">
         <dex dex="/home/remy/ionic_projects/myApp/platforms/android/build/intermediates/pre-dexed/debug/com.android.support-support-compat-25.2.0_010ee5dd3e1d84bca7088aa0d4ff4f82da9000d8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/remy/ionic_projects/myApp/platforms/android/build/intermediates/exploded-aar/com.android.support/support-v4/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/home/remy/ionic_projects/myApp/platforms/android/build/intermediates/pre-dexed/debug/com.android.support-support-v4-25.2.0_e06684bad9904696bd298cf40c0efd843abfdeb8.jar" />
     </item>
 
 </items>
